@@ -11,7 +11,7 @@ QkFJTntiQTczX1E4Ul9BcmhIQ19YNHlHY0R9
 
 ## Tools used
 - **CyberChef** – From Base64, Vigenère Decode, Magic
-- **Python 3** – scripts in this repo (`solve.py`)
+- **Python 3** – scripts in this repo (`test_code.py`)
 - **dcode.fr** – cipher identification and Vigenère/other solvers
 - **claude** - help with analysis and script
 
@@ -53,17 +53,18 @@ Applying a repeating 4-letter key gives `BYTE{bY73_...`. The start matches, and 
 None of these produced a readable full flag.
 
 ## Result
-The first layer (Base64) is solved, and the second layer is a keyed polyalphabetic-style cipher whose key starts with `ACPJ`. The full key is still unknown
+The first layer (Base64) is solved, and the second layer is a keyed polyalphabetic-style cipher whose key starts with `ACPJ`. The full key is still unknown.
+End Result : **BYTE{bY73_B8I_ApsYC_V4jXcB}**
 
 ## Files
 | File | Purpose |
 |---|---|
-| `solve.py` | Decodes Base64 and tests Vigenère/Beaufort keys (guessed keys, command-line keys, optional wordlist) |
+| `test_code.py` | Decodes Base64 and tests Vigenère/Beaufort keys (guessed keys, command-line keys, optional wordlist) |
 | `screenshots/` | CyberChef recipe and output screenshots |
 
 ## How to run
 ```bash
-python solve.py                      # built-in guessed keys
-python solve.py MYKEY                # also try MYKEY
-python solve.py --wordlist words.txt # try every word in a wordlist
+python test_code.py                      # built-in guessed keys
+python test_code.py MYKEY                # also try MYKEY
+python test_code.py --wordlist words.txt # try every word in a wordlist
 ```
