@@ -13,6 +13,7 @@ QkFJTntiQTczX1E4Ul9BcmhIQ19YNHlHY0R9
 - **CyberChef** – From Base64, Vigenère Decode, Magic
 - **Python 3** – scripts in this repo (`solve.py`)
 - **dcode.fr** – cipher identification and Vigenère/other solvers
+- **claude** - help with analysis and script
 
 ## Approach
 
